@@ -1,6 +1,5 @@
 package neo4j.db;
 
-import neo4j.db.models.SocialNetworkInstance;
 import org.neo4j.graphdb.*;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 
