@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 
 public class Neo4jHandlerTest {
-    Neo4jHandler handler;
+    private Neo4jHandler handler;
 
     @Before
     public void init() {

@@ -2,8 +2,8 @@ package neo4j.models;
 
 import neo4j.db.models.SocialNetworkInstance;
 import neo4j.db.models.User;
-import org.junit.Test;
 
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 
