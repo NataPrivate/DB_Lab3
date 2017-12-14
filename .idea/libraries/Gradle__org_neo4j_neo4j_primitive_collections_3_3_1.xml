@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.neo4j:neo4j-primitive-collections:3.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-primitive-collections/3.3.1/915524cb3df435132af168b726bbb716da7de2ed/neo4j-primitive-collections-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-primitive-collections/3.3.1/7367ed47985032b0b8c73905e3a7e50d2261886e/neo4j-primitive-collections-3.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

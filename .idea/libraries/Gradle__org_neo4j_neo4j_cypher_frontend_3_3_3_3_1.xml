@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.neo4j:neo4j-cypher-frontend-3.3:3.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-frontend-3.3/3.3.1/6aef200ace437547ced019ea1ca482e86f82d9ea/neo4j-cypher-frontend-3.3-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.neo4j/neo4j-cypher-frontend-3.3/3.3.1/e45dbc016748b448ff2d9122b661dc9b7288bd66/neo4j-cypher-frontend-3.3-3.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
