@@ -85,6 +85,26 @@ public class Neo4jHandler {
         }
     }
 
+    public int getNodesCount() {
+        int nodesCount = 0;
+        try (Transaction tx = graphDB.beginTx()) {
+            ResourceIterator iterator = graphDB.getAllNodes().iterator();
+            for (; iterator.hasNext(); nodesCount++, iterator.next()) ;
+            tx.success();
+        }
+        return nodesCount;
+    }
+
+    public int getRelationshipsCount() {
+        int relationsCount = 0;
+        try (Transaction tx = graphDB.beginTx()) {
+            ResourceIterator iterator = graphDB.getAllRelationships().iterator();
+            for (; iterator.hasNext(); relationsCount++, iterator.next()) ;
+            tx.success();
+        }
+        return relationsCount;
+    }
+
     //region MATCH
     public String getOrderedLoginsList() {
         StringBuilder query = new StringBuilder("MATCH (user:User) ")
