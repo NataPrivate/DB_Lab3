@@ -17,7 +17,8 @@ public class Group {
     }
     public Group(String title, List<User> subscribers) {
         this(title);
-        subscribers.forEach(this::subscribe);
+        if (subscribers != null)
+            subscribers.forEach(this::subscribe);
     }
 
     public void subscribe(User user) {

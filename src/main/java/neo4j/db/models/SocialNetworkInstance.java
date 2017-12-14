@@ -68,18 +68,21 @@ public class SocialNetworkInstance {
     }
 
     private List<Group> getGroups(int groupsCount) {
-        if (users.size() < 1)
-            throw new UnsupportedOperationException();
-
-        Random random = new Random();
-        int fromIndex;
-        int toIndex;
-        int usersCount = users.size();
         List<Group> allGroups = new ArrayList<>();
-        for (int i = 0; i < groupsCount; i++) {
-            fromIndex = random.nextInt(usersCount) + 1;
-            toIndex = fromIndex + random.nextInt(usersCount - fromIndex + 1);
-            allGroups.add(getGeneratedGroup(i, users.subList(fromIndex, toIndex)));
+        if (users.size() == 0) {
+            for (int i = 0; i < groupsCount; i++)
+                allGroups.add(getGeneratedGroup(i, null));
+        }
+        else {
+            Random random = new Random();
+            int fromIndex;
+            int toIndex;
+            int usersCount = users.size();
+            for (int i = 0; i < groupsCount; i++) {
+                fromIndex = random.nextInt(usersCount) + 1;
+                toIndex = fromIndex + random.nextInt(usersCount - fromIndex + 1);
+                allGroups.add(getGeneratedGroup(i, users.subList(fromIndex, toIndex)));
+            }
         }
         return allGroups;
     }
