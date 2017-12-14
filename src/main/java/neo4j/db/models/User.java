@@ -1,7 +1,6 @@
 package neo4j.db.models;
 
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +12,8 @@ public class User {
     private String location;
     private int age;
     private Gender gender;
-    @Setter
     private List<User> friends;
-    @Setter
     private List<Group> groups;
-    @Setter
     private List<String> statuses;
 
     public User(String login, String location, int age, Gender gender) {
