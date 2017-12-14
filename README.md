@@ -5,6 +5,10 @@
  - Blue - Users
  - Red - Groups
 
+[![Build Status](https://travis-ci.org/NataPrivate/DB_Lab3.svg?branch=master)](https://travis-ci.org/NataPrivate/DB_Lab3)
+[![codecov](https://codecov.io/gh/NataPrivate/DB_Lab3/branch/master/graph/badge.svg)](https://codecov.io/gh/NataPrivate/DB_Lab3)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/786fcca707594962a0c09bd658df36cd)](https://www.codacy.com/app/NataPrivate/DB_Lab3?utm_source=github.com&utm_medium=referral&utm_content=NataPrivate/DB_Lab3&utm_campaign=Badge_Coverage)
+
 ![DB GRAPH](graph.png)
 
 **Database** consists of 7 Users and 5 Groups. Total: 13 Nodes and 30 relationships.
