@@ -31,10 +31,10 @@ public class User {
         statuses.forEach(this::setStatus);
     }
 
-    public void makeFriend(User user) {
-        if (user != null && !friends.contains(user)) {
-            friends.add(user);
-            user.getFriends().add(this);
+    public void makeFriend(User anotherUser) {
+        if (anotherUser != null && anotherUser != this && !friends.contains(anotherUser)) {
+            friends.add(anotherUser);
+            anotherUser.getFriends().add(this);
         }
     }
 
