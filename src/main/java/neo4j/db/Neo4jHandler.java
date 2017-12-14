@@ -86,6 +86,7 @@ public class Neo4jHandler {
         }
     }
 
+    //region MATCH
     public String getOrderedLoginsList() {
         StringBuilder query = new StringBuilder("MATCH (user:User) ")
                     .append("RETURN user.login AS Login ")
@@ -166,7 +167,7 @@ public class Neo4jHandler {
                     .append("-[:friend]-> (secondHandFriend:User) ")
                     .append("-[:member]-> (group:Group) ")
                     .append("WHERE user.login = \'").append(userLogin).append("\' ")
-                    .append("RETURN count(group) AS FriendOfFriendGroupsCount");
+                    .append("RETURN count(group) AS FriendsOfFriendsGroupsCount");
         return getMatchResultAsString(query.toString());
     }
 
@@ -220,6 +221,7 @@ public class Neo4jHandler {
         }
         return resultIterator.resultAsString();
     }
+    //endregion
 
     public void close() {
         graphDB.shutdown();
